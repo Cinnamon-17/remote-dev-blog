@@ -1,0 +1,22 @@
+===== CPU Info =====
+Apple M1
+
+===== Memory Info =====
+      Memory: 8 GB
+
+===== Operating System =====
+ProductName:		macOS
+ProductVersion:		14.7.4
+BuildVersion:		23H420
+
+===== Kernel Info =====
+Darwin dxs-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Thu Dec 19 20:47:33 PST 2024; root:xnu-10063.141.1.703.2~1/RELEASE_ARM64_T8103 arm64
+
+===== Compiler Version =====
+Apple clang version 16.0.0 (clang-1600.0.26.6)
+Target: arm64-apple-darwin23.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+===== Python Version =====
+Python 3.9.13
