@@ -1,0 +1,8 @@
+Small matrix verification:
+Result = [[19, 22], [43, 50]]
+Expected = [[19, 22], [43, 50]]
+Correct: True
+
+C benchmark:
+Matrix size: 3 x 3
+Execution time: 0.00000100 seconds

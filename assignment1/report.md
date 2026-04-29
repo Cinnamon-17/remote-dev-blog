@@ -116,3 +116,82 @@ Execution time: 5.708999999964881e-06 seconds
 
 This is a very small test case, so the execution time is extremely short. Larger matrix sizes are more useful for observing performance differences between different programming languages or implementations.
 
+## 6. C Language Implementation
+
+A C version of the matrix multiplication program was also implemented in `assignment1/matrix_mul.c`.
+
+The C implementation uses the same standard triple-loop algorithm as the Python version. The main difference is that the C program stores matrices in one-dimensional arrays. For a matrix with size `n x n`, the element at row `i` and column `j` is accessed as:
+
+```text
+M[i * n + j]
+```
+
+The core multiplication logic is:
+
+```c
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        int total = 0;
+        for (int k = 0; k < n; k++) {
+            total += A[i * n + k] * B[k * n + j];
+        }
+        C[i * n + j] = total;
+    }
+}
+```
+
+The C program can be compiled with:
+
+```bash
+gcc -O2 assignment1/matrix_mul.c -o assignment1/matrix_mul_c
+```
+
+It can be executed with:
+
+```bash
+./assignment1/matrix_mul_c 3
+```
+
+The C implementation was verified using the same 2 x 2 test case:
+
+```text
+Small matrix verification:
+Result = [[19, 22], [43, 50]]
+Expected = [[19, 22], [43, 50]]
+Correct: True
+```
+
+This confirms that the C implementation produces the correct result for the manually verified test case.
+
+## 7. Conclusion
+
+In this assignment, I practiced basic command line operations, collected system configuration information, implemented matrix multiplication in Python, and verified the correctness of the algorithm using both a manually checked example and NumPy comparison.
+
+I also implemented a C version of the same algorithm. This helped me understand the difference between an interpreted language implementation and a compiled language implementation at a basic level. Both implementations follow the same mathematical definition of matrix multiplication.
+
+Through this project, I became more familiar with Markdown documentation, terminal commands, Git version control, and the process of preparing technical work for publication on a static website.
+
+## 8. References
+
+- Python Documentation
+- NumPy Documentation
+- GCC / Clang command line documentation
+- macOS command line tools
+- Course assignment instructions
+
+## 9. Appendix
+
+The main files created for this assignment are:
+
+```text
+assignment1/matrix_mul.py
+assignment1/matrix_mul.c
+assignment1/report.md
+assignment1/results/system_info.txt
+assignment1/results/python_test_size3.txt
+assignment1/results/c_test_size3.txt
+```
+
+The generated executable file `assignment1/matrix_mul_c` is ignored by Git because it can be rebuilt from the C source code.
+
+

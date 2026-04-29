@@ -2,3 +2,4 @@
 __pycache__/
 *.pyc
 
+assignment1/matrix_mul_c
