@@ -3,105 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dai Kaixuan's Course Website</title>
+    <title>Dai Kaixuan | Course Project Website</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #222;
-            background-color: #f7f9fb;
+        * {
+            box-sizing: border-box;
         }
 
-        header {
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f7fb 0%, #eef3f8 100%);
+            color: #1f2933;
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        .hero {
             background: white;
-            padding: 32px;
-            border-radius: 12px;
-            margin-bottom: 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 12px 30px rgba(31, 41, 51, 0.08);
+            margin-bottom: 28px;
+            border: 1px solid #e5eaf0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: #e7f0ff;
+            color: #1b5fbf;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 18px;
         }
 
         h1 {
-            margin-top: 0;
-            color: #1f3a4d;
+            margin: 0 0 14px;
+            font-size: 42px;
+            color: #17324d;
+            letter-spacing: -0.5px;
         }
 
-        h2 {
-            color: #1f3a4d;
-            margin-top: 0;
+        .subtitle {
+            font-size: 18px;
+            color: #52616f;
+            max-width: 760px;
+            margin: 0;
+        }
+
+        .info {
+            margin-top: 26px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .info span {
+            background: #f5f7fa;
+            border: 1px solid #e1e7ef;
+            border-radius: 12px;
+            padding: 10px 14px;
+            font-size: 14px;
+            color: #34495e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 24px;
         }
 
         .card {
             background: white;
-            padding: 24px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 8px 22px rgba(31, 41, 51, 0.07);
+            border: 1px solid #e5eaf0;
         }
 
-        a {
-            color: #1b76d1;
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #17324d;
+            font-size: 24px;
+        }
+
+        .card p {
+            color: #52616f;
+            margin-bottom: 18px;
+        }
+
+        .link-list {
+            display: grid;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .link-list a {
+            display: block;
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: #f7faff;
+            color: #1b5fbf;
+            text-decoration: none;
+            border: 1px solid #dce8f8;
+            font-weight: 600;
+            transition: all 0.15s ease;
+        }
+
+        .link-list a:hover {
+            background: #eaf3ff;
+            transform: translateY(-1px);
+        }
+
+        .status {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            color: #16794c;
+            background: #e8f7ef;
+            border: 1px solid #cdebdc;
+            border-radius: 999px;
+            padding: 5px 10px;
+            margin-bottom: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #6b7c8f;
+            font-size: 14px;
+            margin-top: 36px;
+        }
+
+        .footer a {
+            color: #1b5fbf;
             text-decoration: none;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
+        @media (max-width: 640px) {
+            .hero {
+                padding: 32px 24px;
+            }
 
-        ul {
-            padding-left: 22px;
-        }
+            h1 {
+                font-size: 32px;
+            }
 
-        footer {
-            margin-top: 32px;
-            color: #666;
-            font-size: 14px;
+            .subtitle {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
+
 <body>
+    <main class="page">
 
-<header>
-    <h1>Dai Kaixuan's Course Website</h1>
-    <p>This website is created for the course assignments on command line operations, Markdown documentation, matrix multiplication implementation, and static website deployment.</p>
-</header>
+        <section class="hero">
+            <div class="tag">Course Project Website</div>
 
-<section class="card">
-    <h2>Assignment 1: Command Line & Documentation</h2>
-    <p>
-        Assignment 1 focuses on command line operations, system configuration collection,
-        Markdown documentation, matrix multiplication implementation, and correctness verification.
-    </p>
+            <h1>Dai Kaixuan's Remote Development Portfolio</h1>
 
-    <ul>
-        <li><a href="assignment1/report.html">View Assignment 1 HTML Report</a></li>
-        <li><a href="assignment1/report.pdf">Download Assignment 1 PDF Report</a></li>
-        <li><a href="assignment1/report.md">View Assignment 1 Markdown Report</a></li>
-        <li><a href="assignment1/matrix_mul.py">View Python Source Code</a></li>
-        <li><a href="assignment1/matrix_mul.c">View C Source Code</a></li>
-    </ul>
-</section>
+            <p class="subtitle">
+                This website presents my course assignments on command line operations,
+                Markdown documentation, matrix multiplication implementation, Git version control,
+                and static website deployment.
+            </p>
 
-<section class="card">
-    <h2>Assignment 2: Static Personal Blog Website</h2>
-    <p>
-        This page serves as a simple static personal website. It integrates the previous assignment
-        and provides links to the report files and source code.
-    </p>
+            <div class="info">
+                <span><strong>Student:</strong> Dai Kaixuan</span>
+                <span><strong>Student ID:</strong> ZY2557202</span>
+                <span><strong>Deployment:</strong> GitHub Pages</span>
+                <span><strong>Project:</strong> Static Website</span>
+            </div>
+        </section>
 
-    <p>
-        The project is managed with Git and will be deployed as a static website.
-    </p>
+        <section class="grid">
 
-    <p><a href="assignment2_report.html">View Assignment 2 HTML Report</a></p>
-</section>
+            <div class="card">
+                <span class="status">Completed</span>
+                <h2>Assignment 1</h2>
+                <p>
+                    Command line practice, system configuration collection, Markdown report writing,
+                    Python matrix multiplication, C implementation, and correctness verification.
+                </p>
 
-<footer>
-    <p>Created by Dai Kaixuan for course assignment submission.</p>
-</footer>
+                <div class="link-list">
+                    <a href="assignment1/report.html">View HTML Report</a>
+                    <a href="assignment1/report.pdf">Download PDF Report</a>
+                    <a href="assignment1/report.md">View Markdown Report</a>
+                    <a href="assignment1/matrix_mul.py">View Python Source Code</a>
+                    <a href="assignment1/matrix_mul.c">View C Source Code</a>
+                </div>
+            </div>
 
+            <div class="card">
+                <span class="status">Completed</span>
+                <h2>Assignment 2</h2>
+                <p>
+                    A static personal website built with HTML and CSS, managed using Git,
+                    pushed to GitHub, and deployed publicly through GitHub Pages.
+                </p>
+
+                <div class="link-list">
+                    <a href="assignment2_report.html">View HTML Report</a>
+                    <a href="assignment2_report.md">View Markdown Report</a>
+                    <a href="https://github.com/Cinnamon-17/remote-dev-blog">View GitHub Repository</a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>
+                Created for course assignment submission.  
+                Hosted with <a href="https://pages.github.com/">GitHub Pages</a>.
+            </p>
+        </footer>
+
+    </main>
 </body>
 </html>
 
