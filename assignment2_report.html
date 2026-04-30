@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 2 Report</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    line-height: 1.6;
+    color: #222;
+}
+h1, h2, h3 {
+    color: #1f3a4d;
+}
+pre {
+    background: #f5f5f5;
+    padding: 12px;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+code {
+    font-family: Menlo, Consolas, monospace;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background: #f0f0f0;
+}
+</style>
+</head>
+<body>
+<h1>Assignment 2: Static Personal Blog Website Report</h1>
+<p><strong>Student Name</strong>: Dai Kaixuan<br />
+<strong>Student ID</strong>: ZY2557202  </p>
+<h2>1. Project Overview</h2>
+<p>This assignment focuses on building and deploying a static personal website. The website is used to present my course assignment work, especially Assignment 1, which includes command line practice, Markdown documentation, matrix multiplication implementation, and correctness verification.</p>
+<p>The final website is deployed through GitHub Pages and can be accessed through a public URL.</p>
+<p>Website URL:</p>
+<pre><code class="language-text">https://cinnamon-17.github.io/remote-dev-blog/
+</code></pre>
+<h2>2. Tool Choice</h2>
+<p>I chose to build the website using simple HTML and CSS instead of a more complex framework.</p>
+<p>The main reasons are:</p>
+<ul>
+<li>The assignment only requires a static website.</li>
+<li>HTML and CSS are simple, stable, and easy to deploy.</li>
+<li>GitHub Pages can directly host static HTML files.</li>
+<li>This approach avoids unnecessary framework configuration and focuses on the core requirements of the assignment.</li>
+</ul>
+<p>The main files used for the website are:</p>
+<pre><code class="language-text">index.html
+assignment1/report.md
+assignment1/report.html
+assignment1/report.pdf
+assignment1/matrix_mul.py
+assignment1/matrix_mul.c
+</code></pre>
+<h2>3. Website Structure</h2>
+<p>The website contains a homepage and links to Assignment 1 materials.</p>
+<p>The homepage is implemented in:</p>
+<pre><code class="language-text">index.html
+</code></pre>
+<p>The homepage includes links to:</p>
+<ul>
+<li>Assignment 1 HTML report</li>
+<li>Assignment 1 PDF report</li>
+<li>Assignment 1 Markdown report</li>
+<li>Python source code</li>
+<li>C source code</li>
+</ul>
+<p>This satisfies the requirement of integrating previous work into the personal website.</p>
+<h2>4. Git Version Control Process</h2>
+<p>The project was managed using Git from the beginning. I initialized a local Git repository and made several meaningful commits during development.</p>
+<p>The main Git workflow was:</p>
+<pre><code class="language-bash">git init
+git add .
+git commit -m &quot;Initial project structure&quot;
+</code></pre>
+<p>Then I continued committing after completing each major step, such as adding the Python implementation, adding system information, writing the report, adding the C implementation, generating the PDF version, and creating the website homepage.</p>
+<p>Examples of meaningful commits include:</p>
+<pre><code class="language-text">Initial project structure
+Add Python matrix multiplication implementation
+Add system configuration to report
+Add Python verification result
+Document Python implementation and verification
+Add C implementation and finalize assignment 1 report
+Add HTML and PDF versions of assignment 1 report
+Create static website homepage
+Disable Jekyll processing for GitHub Pages
+</code></pre>
+<p>Each commit reflects a clear development step rather than random or unnecessary changes.</p>
+<h2>5. Deployment Process</h2>
+<p>The website was deployed using GitHub Pages.</p>
+<p>First, I created a GitHub repository named:</p>
+<pre><code class="language-text">remote-dev-blog
+</code></pre>
+<p>Then I connected the local repository to the remote GitHub repository using SSH:</p>
+<pre><code class="language-bash">git remote set-url origin git@github.com:Cinnamon-17/remote-dev-blog.git
+git push -u origin main
+</code></pre>
+<p>After pushing the files to GitHub, I enabled GitHub Pages in the repository settings:</p>
+<pre><code class="language-text">Settings -&gt; Pages -&gt; Deploy from a branch -&gt; main -&gt; /root
+</code></pre>
+<p>Since <code>index.html</code> is located in the root directory, GitHub Pages can directly use it as the website homepage.</p>
+<h2>6. Integration of Assignment 1</h2>
+<p>Assignment 1 was integrated into the website by placing its report files and source code under the <code>assignment1/</code> directory.</p>
+<p>The website provides direct links to:</p>
+<pre><code class="language-text">assignment1/report.html
+assignment1/report.pdf
+assignment1/report.md
+assignment1/matrix_mul.py
+assignment1/matrix_mul.c
+</code></pre>
+<p>This allows visitors to view the documentation, download the PDF report, and inspect the source code.</p>
+<h2>7. Conclusion</h2>
+<p>Through this assignment, I practiced building a simple static website, managing the project with Git, publishing files through GitHub, and deploying a public website using GitHub Pages.</p>
+<p>This project also connects Assignment 1 and Assignment 2 together: Assignment 1 provides the technical content, while Assignment 2 provides the public website used to present and submit that content.</p>
+</body>
+</html>
